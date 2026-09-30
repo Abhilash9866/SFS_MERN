@@ -1,9 +1,8 @@
 let express = require("express");
 let app = express();
-app.use(express.json());
 app.get("/", (req, res) => {
-    res.send("Secure File Storage Backend Running success");
+    res.send("Secure File Storage Server");
 });
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
+app.listen(3000,() => {
+    console.log("Running on port 3000");
 });
